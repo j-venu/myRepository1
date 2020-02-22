@@ -25,15 +25,15 @@ public class HealthCareDAO implements IHealthCareDAO {
 		return list;
 	}
 	@Override
-	public boolean addcenter(HealthCareDiagnosticCenter d) {
+	public boolean addcenter(HealthCareDiagnosticCenter diagnostic) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public boolean removecenter(HealthCareDiagnosticCenter d) {
+	public boolean removecenter(HealthCareDiagnosticCenter diagnostic) {
 		// TODO Auto-generated method stub
-		if(centerList.remove(d))
+		if(centerList.remove(diagnostic))
 			return true;
 		else
 			return false;

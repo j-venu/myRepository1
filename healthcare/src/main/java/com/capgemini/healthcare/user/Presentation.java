@@ -23,24 +23,24 @@ public class Presentation {
 		
 		System.out.println("Available Centers");
 		
-		List<HealthCareDiagnosticCenter> l=dao.toList();
+		List<HealthCareDiagnosticCenter> list=dao.toList();
 		
-		for (HealthCareDiagnosticCenter healthCareDiagnosticCenter : l) {
+		for (HealthCareDiagnosticCenter healthCareDiagnosticCenter : list) {
 			System.out.println(healthCareDiagnosticCenter);
 		}
 		
 		System.out.println("Select a centerId ");
-		String s=sc.next();
+		String str=sc.next();
 		sc.nextLine();
 		
 		
 		boolean flag=false;
-		boolean b=false;
-		for (HealthCareDiagnosticCenter healthCareDiagnosticCenter : l) {
+		boolean bool=false;
+		for (HealthCareDiagnosticCenter healthCareDiagnosticCenter : list) {
 			
-			if(healthCareDiagnosticCenter.getCenterId().equals(s))
+			if(healthCareDiagnosticCenter.getCenterId().equals(str))
 			{
-				b=dao.removecenter(healthCareDiagnosticCenter);
+				bool=dao.removecenter(healthCareDiagnosticCenter);
 				flag=true;
 				break;
 			}
@@ -48,10 +48,10 @@ public class Presentation {
 		if(flag==false)
 			System.out.println("Entered id does not exist");
 		
-		if(b) {
+		if(bool) {
 		System.out.println("Centers after removing");
 	
-			for (HealthCareDiagnosticCenter healthCareDiagnosticCenter : l) {
+			for (HealthCareDiagnosticCenter healthCareDiagnosticCenter : list) {
 				System.out.println(healthCareDiagnosticCenter);
 			}
 		}
