@@ -21,7 +21,7 @@ public class Presentation {
 		//HealthCareDiagnosticCenter center = new HealthCareDiagnosticCenter(Integer.toString(rand.nextInt(1000)));
 		
 		
-		System.out.println("Centers before removing");
+		System.out.println("Available Centers");
 		
 		List<HealthCareDiagnosticCenter> l=dao.toList();
 		
@@ -29,7 +29,7 @@ public class Presentation {
 			System.out.println(healthCareDiagnosticCenter);
 		}
 		
-		System.out.println("Select a center id");
+		System.out.println("Select a centerId ");
 		String s=sc.next();
 		sc.nextLine();
 		
@@ -38,7 +38,7 @@ public class Presentation {
 		boolean b=false;
 		for (HealthCareDiagnosticCenter healthCareDiagnosticCenter : l) {
 			
-			if(healthCareDiagnosticCenter.getCenterid().equals(s))
+			if(healthCareDiagnosticCenter.getCenterId().equals(s))
 			{
 				b=dao.removecenter(healthCareDiagnosticCenter);
 				flag=true;
@@ -57,9 +57,6 @@ public class Presentation {
 		}
 	}
 	}
-
-
-
 
 
 

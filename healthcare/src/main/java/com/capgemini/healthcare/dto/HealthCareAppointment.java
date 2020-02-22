@@ -1,12 +1,12 @@
 package com.capgemini.healthcare.dto;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
+//import java.time.LocalDate;
+//import java.util.ArrayList;
+//import java.util.List;
 
 public class HealthCareAppointment {
 
-	List<HealthCareUser> user = new ArrayList<HealthCareUser>();
+	/*List<HealthCareUser> user = new ArrayList<HealthCareUser>();
 	long appointmentId;
 	LocalDate l;
 	boolean approved;
@@ -49,4 +49,4 @@ public class HealthCareAppointment {
 				+ "]";
 	}
 
-}
+*/}

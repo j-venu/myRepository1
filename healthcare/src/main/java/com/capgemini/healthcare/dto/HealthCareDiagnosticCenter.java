@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HealthCareDiagnosticCenter {
-	public HealthCareDiagnosticCenter(String centername, String centerid) {
+	public HealthCareDiagnosticCenter(String centerName, String centerId) {
 		super();
-		this.centername = centername;
-		this.centerid = centerid;
+		this.centerName = centerName;
+		this.centerId = centerId;
 	}
 
 	List<HealthCareTest> listOfTests = new ArrayList<HealthCareTest>();
@@ -19,7 +19,7 @@ public class HealthCareDiagnosticCenter {
 
 	@Override
 	public String toString() {
-		return " centerid=" + centerid +" centername=" + centername  ;
+		return " centerId=" + centerId +" centerName=" + centerName  ;
 	}
 
 	public List<HealthCareTest> getListOfTests() {
@@ -38,23 +38,18 @@ public class HealthCareDiagnosticCenter {
 		this.appointmentList = appointmentList;
 	}
 
-	String centername;
-	String centerid;
+	String centerName;
+	String centerId;
 
-	public String getCentername() {
-		return centername;
+	public String getCenterName() {
+		return centerName;
 	}
 
-	public void setCentername(String centername) {
-		this.centername = centername;
+	public void setCenterName(String centerName) {
+		this.centerName = centerName;
 	}
 
-	public String getCenterid() {
-		return centerid;
+	public String getCenterId() {
+		return centerId;
 	}
-
-	public void setCenterid(String centerid) {
-		this.centerid = centerid;
-	}
-
 }

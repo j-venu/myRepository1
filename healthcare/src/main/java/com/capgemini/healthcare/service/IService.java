@@ -1,11 +1,8 @@
 package com.capgemini.healthcare.service;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
-import com.capgemini.healthcare.dto.*;
+
 import com.capgemini.healthcare.dto.HealthCareDiagnosticCenter;
-import com.capgemini.healthcare.dto.HealthCareTest;
-import com.capgemini.healthcare.dto.HealthCareUser;
 
 public interface IService {
 	ArrayList<HealthCareDiagnosticCenter> centerlist = new ArrayList();

@@ -14,8 +14,8 @@ public class HealthCareDAO implements IHealthCareDAO {
 		// TODO Auto-generated method stub
 		List<HealthCareDiagnosticCenter>list = new ArrayList<HealthCareDiagnosticCenter>();
         
-		String centername = null;
-				String centerid = null;
+		String centerName = null;
+				String centerId = null;
 				
 				list.add(new HealthCareDiagnosticCenter("Hyd","101"));
 				list.add(new HealthCareDiagnosticCenter("secundrabad","102"));

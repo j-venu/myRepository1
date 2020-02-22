@@ -1,4 +1,4 @@
-package com.capgemini.healthcare.dto;
+/*package com.capgemini.healthcare.dto;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -77,3 +77,4 @@ public class HealthCareUser {
 	}
 
 }
+*/
